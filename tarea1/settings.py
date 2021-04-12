@@ -55,7 +55,7 @@ ROOT_URLCONF = 'tarea1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/gvcespedes/Documentos/tarea1_Tallerint/tarea1/myapp/templates'],
+        'DIRS': ['../templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
