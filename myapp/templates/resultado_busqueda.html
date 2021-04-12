@@ -1,7 +1,7 @@
 <html>
 <body>
     {% include "barra.html" %}
-    <p>Resultados de la búsqueda "{{buscado}}":</p>
+    <p><h1>Resultados de la búsqueda "{{buscado}}":</h1></p>
     <u>
         {% for i in response%}
             <li><a href="../consulta3/{{i.name}}">{{i.name}}</a></li>
