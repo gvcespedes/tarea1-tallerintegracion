@@ -1,0 +1,9 @@
+<ul>
+    {% include "barra.html" %}
+    {% for i in response%}
+        {% if  i.season == temporada%}
+            <li type="circle"><a href="../../consulta2/{{i.episode_id}}">{{i.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+    
+</ul>

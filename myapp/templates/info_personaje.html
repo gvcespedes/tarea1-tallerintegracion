@@ -1,0 +1,29 @@
+<html>
+<body>
+    {% include "barra.html" %}
+    {% for i in response%}
+        <p> Nombre: {{i.name}}</p>
+        <p> Ocupacion: </p>
+        {% for j in i.occupation %}
+            <li>{{j}}</li>
+        {% endfor %}
+        <img src={{i.img}} height=600></img>
+        <p> Estado: {{i.status}}</p>
+        <p> Actor/Actriz: {{i.portrayed}}</p>
+        <p> Apodo: {{i.nickname}}</p>
+        <p> Apariciones en breaking bad: </p>
+        {% for j in i.appearance %}
+            <li><a href="../consulta1/breakingbad/{{j}}">{{j}}</a></li>
+        {% endfor %}
+        <p> Apariciones en better call Saul: </p>
+        {% for j in i.better_call_saul_appearance %}
+        <li><a href="../consulta1/bettercallsaul/{{j}}">{{j}}</a></li>
+        {% endfor %}
+
+        <p>Frases:</p>
+        {% for i in response2 %}
+            <li>"{{i.quote}}" - {{i.author}} ( {{i.series}} )</li>
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+<html>
+<body>
+    {% include "barra.html" %}
+    <p>Resultados de la búsqueda "{{buscado}}":</p>
+    <u>
+        {% for i in response%}
+            <li><a href="../consulta3/{{i.name}}">{{i.name}}</a></li>
+        {% endfor %}
+    </u>
+</body>
+</html>

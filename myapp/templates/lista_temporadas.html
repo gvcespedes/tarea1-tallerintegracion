@@ -1,0 +1,13 @@
+<ul>
+    {% include "barra.html" %}
+    <p>Temporadas de Breaking Bad:</p>
+    {% for i in temps%}
+        <li><a href="../../consulta1/breakingbad/{{i}}">{{i}}</a></li>
+    {% endfor %}
+
+    <p>Temporadas de Better call Saul:</p>
+    {% for i in temps2%}
+    <li><a href="../../consulta1/bettercallsaul/{{i}}">{{i}}</a></li>
+    {% endfor %}
+    
+</ul>

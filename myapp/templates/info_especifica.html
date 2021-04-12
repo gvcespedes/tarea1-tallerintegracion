@@ -1,0 +1,16 @@
+<html>
+<body>
+    {% include "barra.html" %}
+    {% for i in response%}
+        <p> Titulo: {{i.title}}</p>
+        <p> Serie: {{i.series}}</p>
+        <p> Temporada: {{i.season}}</p>
+        <p> Episodio num: {{i.episode}}</p>
+        <p> Fecha de estreno: {{i.air_date}}</p>
+        <p>Personajes: </p>
+        {% for j in i.characters %}
+            <li><a href="../consulta3/{{j}}">{{j}}</a></li>
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>
