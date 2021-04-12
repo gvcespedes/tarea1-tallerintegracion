@@ -55,7 +55,7 @@ ROOT_URLCONF = 'tarea1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['../templates'],
+        'DIRS': ['./myapp/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
